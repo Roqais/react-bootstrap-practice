@@ -1,0 +1,28 @@
+.carousel {
+    min-height: 90vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F7FA;
+}
+
+.caro-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Optional: Center the text horizontally */
+    
+}
+
+.caro-div {
+    text-align: left;
+    margin-left: 11rem;
+    margin-right: 2rem;
+}
+
+.caro-button {
+    background-color: #4CAF4F;
+    padding: 0.8rem 2.2rem;
+    border-radius: 0;
+    border-color: transparent;
+}

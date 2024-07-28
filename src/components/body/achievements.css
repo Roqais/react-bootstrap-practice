@@ -1,0 +1,52 @@
+.ach-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.ach-col-1 h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.ach-col-1 span {
+  color: #4caf4f;
+}
+
+.ach-col-1 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.ach-row-1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0 2rem;
+}
+
+.ach-row-2 {
+    display: flex;
+}
+
+.ach-row-2 img {
+    padding-left: 50px;
+}
+
+.ach-row-2 h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.ach-row-2 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+

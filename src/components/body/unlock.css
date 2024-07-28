@@ -1,0 +1,22 @@
+.unlock-col h2 {
+    width: 550px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+
+.unlock-col p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 145px;
+}
+
+.unlock-b {
+    background-color: #4CAF4F;
+    align-self: start;
+    padding : 14px 32px 14px 32px;
+    border-radius: 4px;
+    border: none;
+}

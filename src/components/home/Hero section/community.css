@@ -1,0 +1,43 @@
+.custom-div {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.custom-div h2 {
+  font-size: 36px;
+  font-weight: 600;
+  width: 550px;
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+.custom-div p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.com-row {
+  margin: 3rem 0rem;
+  gap: 4rem;
+
+}
+
+.com-col {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  margin: 0rem 1rem;
+  padding: 1.6rem 3rem;
+  border-radius: 6px;
+}
+
+.com-col h3 {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.com-col p {
+  font-weight: 400;
+  font-size: 14px;
+}
