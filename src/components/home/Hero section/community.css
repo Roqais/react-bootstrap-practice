@@ -6,7 +6,7 @@
 .custom-div h2 {
   font-size: 36px;
   font-weight: 600;
-  width: 550px;
+  width: 100%;
   margin: 0 auto; /* Center the text horizontally */
 }
 
@@ -17,16 +17,16 @@
 }
 
 .com-row {
-  margin: 3rem 0rem;
-  gap: 4rem;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adjust the gap between columns as needed */
 }
 
 .com-col {
-  width: 100%;
+  flex: 1;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  margin: 0rem 1rem;
+  margin: 0 1rem;
   padding: 1.6rem 3rem;
   border-radius: 6px;
 }

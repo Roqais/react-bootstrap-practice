@@ -1,0 +1,54 @@
+.footer-section {
+    background-color: #263238;
+    color: #F5F7FA;
+    padding: 50px 0;
+}
+
+.footer-text {
+    color: #F5F7FA;
+    line-height: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer-heading {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.footer-links ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-input-group {
+    background-color: #5c686e;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 45px;
+}
+
+.footer-input {
+    background-color: #5c686e;
+    border: none;
+    flex: 1;
+    height: 100%;
+    color: #D9DBE1;
+}
+
+.footer-button {
+    background-color: #5c686e;
+    border: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}

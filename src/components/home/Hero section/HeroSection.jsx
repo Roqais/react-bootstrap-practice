@@ -1,71 +1,72 @@
+import React from 'react';
 import { Carousel, Button } from 'react-bootstrap';
-import illustration from "../../../assets/Illustration.png"
+import illustration from "../../../assets/Illustration.png";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './hero.css'
+import './hero.css';
 
 function HeroSection() {
     return (
         <>
-            <div>
+            <div className="hero-section">
                 <Carousel>
-                    <Carousel.Item >
+                    <Carousel.Item>
                         <Row className="w-100">
-                            <Col md={7} className='caro-col'>
-                                <div className='caro-div'>
-                                    <h1 style={{ fontSize: '4rem', fontWeight: '600' }}>
-                                        Lessons and Insights <span style={{ color: "#4CAF4F" }}>from 8 years</span>
-                                    </h1>
-                                    <p style={{ fontWeight: '400', fontSize: '16px' }}>Where to grow your business as a photographer: site or social media?</p>
-                                    <Button size='lg' variant="primary" className='caro-button'>Register</Button>
-                                </div>
-                            </Col>
-                            <Col md={5} className='caro-col'>
+                            <Col xs={12} md={5} className='caro-col order-md-2 order-1'>
                                 <img
-                                    className="d-block w-60"
+                                    className="d-block caro-img"
                                     src={illustration}
                                     alt="First slide"
                                 />
+                            </Col>
+                            <Col xs={12} md={7} className='caro-col order-md-1 order-2'>
+                                <div className='caro-div'>
+                                    <h1 className='caro-heading'>
+                                        Lessons and Insights <span className='highlight'>from 8 years</span>
+                                    </h1>
+                                    <p className='caro-text'>Where to grow your business as a photographer: site or social media?</p>
+                                    <Button size='lg' variant="primary" className='caro-button'>Register</Button>
+                                </div>
                             </Col>
                         </Row>
                     </Carousel.Item>
-                    <Carousel.Item >
+                    <Carousel.Item>
                         <Row className="w-100">
-                            <Col md={7} className='caro-col'>
+                            <Col xs={12} md={5} className='caro-col order-md-2 order-1'>
+                                <img
+                                    className="d-block caro-img"
+                                    src={illustration}
+                                    alt="Second slide"
+                                />
+                            </Col>
+                            <Col xs={12} md={7} className='caro-col order-md-1 order-2'>
                                 <div className='caro-div'>
-                                    <h1 style={{ fontSize: '4rem', fontWeight: '600' }}>
-                                        Lessons and Insights <span style={{ color: "#4CAF4F" }}>from 8 years</span>
+                                    <h1 className='caro-heading'>
+                                        Lessons and Insights <span className='highlight'>from 8 years</span>
                                     </h1>
-                                    <p style={{ fontWeight: '400', fontSize: '16px' }}>Where to grow your business as a photographer: site or social media?</p>
+                                    <p className='caro-text'>Where to grow your business as a photographer: site or social media?</p>
                                     <Button size='lg' variant="primary" className='caro-button'>Register</Button>
                                 </div>
-                            </Col>
-                            <Col md={5} className='caro-col'>
-                                <img
-                                    className="d-block w-60"
-                                    src={illustration}
-                                    alt="First slide"
-                                />
                             </Col>
                         </Row>
                     </Carousel.Item>
-                    <Carousel.Item >
+                    <Carousel.Item>
                         <Row className="w-100">
-                            <Col md={7} className='caro-col'>
+                            <Col xs={12} md={5} className='caro-col order-md-2 order-1'>
+                                <img
+                                    className="d-block caro-img"
+                                    src={illustration}
+                                    alt="Third slide"
+                                />
+                            </Col>
+                            <Col xs={12} md={7} className='caro-col order-md-1 order-2'>
                                 <div className='caro-div'>
-                                    <h1 style={{ fontSize: '4rem', fontWeight: '600' }}>
-                                        Lessons and Insights <span style={{ color: "#4CAF4F" }}>from 8 years</span>
+                                    <h1 className='caro-heading'>
+                                        Lessons and Insights <span className='highlight'>from 8 years</span>
                                     </h1>
-                                    <p style={{ fontWeight: '400', fontSize: '16px' }}>Where to grow your business as a photographer: site or social media?</p>
+                                    <p className='caro-text'>Where to grow your business as a photographer: site or social media?</p>
                                     <Button size='lg' variant="primary" className='caro-button'>Register</Button>
                                 </div>
-                            </Col>
-                            <Col md={5} className='caro-col'>
-                                <img
-                                    className="d-block w-60"
-                                    src={illustration}
-                                    alt="First slide"
-                                />
                             </Col>
                         </Row>
                     </Carousel.Item>

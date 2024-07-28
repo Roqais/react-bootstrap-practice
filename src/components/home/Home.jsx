@@ -8,19 +8,15 @@ import Achievements from '../body/Achievements'
 const Home = () => {
     return (
         <>
-            <section>
-                <HeroSection />
+            <HeroSection />
 
-                <Client />
+            <Client />
 
-                <Community />
-            </section>
+            <Community />
 
-            <section>
-                <Unlock />
+            <Unlock />
 
-                <Achievements />
-            </section>
+            <Achievements />
         </>
     )
 }

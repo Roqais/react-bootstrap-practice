@@ -1,22 +1,36 @@
+.unlock-container {
+    padding: 50px 0;
+}
+
 .unlock-col h2 {
-    width: 550px;
+    width: 100%;
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 36px;
 }
 
-
 .unlock-col p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    padding-right: 145px;
+    margin-bottom: 20px;
+    padding-right: 15px;
 }
 
 .unlock-b {
     background-color: #4CAF4F;
-    align-self: start;
-    padding : 14px 32px 14px 32px;
+    align-self: flex-start;
+    padding: 14px 32px;
     border-radius: 4px;
     border: none;
+}
+
+@media (min-width: 768px) {
+    .unlock-col h2 {
+        width: 550px;
+    }
+    
+    .unlock-col p {
+        padding-right: 145px;
+    }
 }

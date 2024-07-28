@@ -13,17 +13,25 @@
 
 .login {
   font-family: "Inter", sans-serif;
-  color: "#4CAF4F";
   font-weight: 500;
   color: #4CAF4F;
 }
 
 .signup {
-    padding: 10px, 20px, 10px, 20px;
-    border-radius: 6px;
-    width: 91px;
-    height: 40px;
-    background-color: #4CAF4F;
-    color: white;
+  padding: 5px 20px;
+  border-radius: 6px;
+  width: 91px;
+  height: 40px;
+  background-color: #4CAF4F;
+  color: white;
+}
 
+@media (max-width: 991px) {
+  .nav-link-custom {
+    margin: 8px 10px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
 }
