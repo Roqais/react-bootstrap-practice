@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row, Form, Button } from 'react-bootstrap';
 import footLogo from '../assets/footLogo.png';
 import send from '../assets/send.png';
@@ -6,6 +6,44 @@ import links from '../assets/links.png';
 import './footer.css';
 
 const Footer = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    const [validated, setValidated] = useState(false);
+
+    const [msg, setMsg] = useState("")
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+
+    const handleSubmit = (e) => {
+        const form = e.currentTarget;
+        if (form.checkValidity() === false) {
+            e.preventDefault();
+            e.stopPropagation();
+        } else {
+            e.preventDefault();
+            // Submit the form data
+            console.log('Form submitted:', formData);
+            // Reset form data
+            setFormData({ name: '', email: '', message: '' });
+            setValidated(false)
+            setMsg("Msg Sent")
+            setTimeout(() => {
+                setMsg("")
+            }, 1500);
+
+        }
+    };
+
+
     return (
         <div className="footer-section">
             <Container>
@@ -40,17 +78,65 @@ const Footer = () => {
                     </Col>
                     <Col md={3} className="mb-3 mb-md-0">
                         <h5 className='footer-heading'>Stay up to date</h5>
-                        <Form>
-                            <Form.Group className="d-flex mt-4 footer-input-group">
-                                <Form.Control 
-                                    type="email" 
-                                    placeholder="Your email address" 
+                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                            <Form.Group className="mt-4">
+                                <Form.Control
+                                    required
+                                    type="text"
+                                    placeholder="Your name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     className="footer-input"
                                 />
-                                <Button variant="" className="footer-button">
-                                    <img src={send} alt="Send Icon" />
-                                </Button>
+                                <Form.Control.Feedback type="invalid">
+                                    Name is required
+                                </Form.Control.Feedback>
                             </Form.Group>
+
+                            <Form.Group className="mt-4">
+                                <Form.Control
+                                    required
+                                    type="email"
+                                    placeholder="Your email address"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    className="footer-input"
+                                />
+                                <Form.Control.Feedback type="invalid">
+                                    Email is required
+                                </Form.Control.Feedback>
+                            </Form.Group>
+
+                            <Form.Group className="mt-4">
+                                <Form.Control
+                                    required
+                                    as="textarea"
+                                    rows={3}
+                                    placeholder="Your message"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    className="footer-input"
+                                />
+                                <Form.Control.Feedback type="invalid">
+                                    Message is required
+                                </Form.Control.Feedback>
+                            </Form.Group>
+
+                            <Form.Group className="d-flex mt-4 justify-content-center footer-input-group">
+                                <Button type="submit" variant="" className="">
+                                    Submit
+                                </Button>
+
+                            </Form.Group>
+
+                            {
+                                msg && <p style={{ color: "red", marginTop: '20px' }}>{msg}</p>
+                            }
+
+
                         </Form>
                     </Col>
                 </Row>
